@@ -13,7 +13,7 @@ export default {
         this.categorias = await obterCategorias();
     },
     components: { CardCategoria },
-    emits: ['adicionarIngrediente']
+    emits: ['adicionarIngrediente', 'removerIngrediente']
 }
 </script>
 
@@ -30,6 +30,7 @@ export default {
                 <CardCategoria 
                   :categoria="categoria" 
                   @adicionarIngrediente="$emit('adicionarIngrediente', $event)"
+                  @removerIngrediente="$emit('removerIngrediente', $event)"
                   />
             </li>
         </ul>
