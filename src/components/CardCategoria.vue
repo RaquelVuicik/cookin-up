@@ -2,7 +2,7 @@
 import type ICategoria from '@/interfaces/ICategoria';
 import type { PropType } from 'vue';
 import Tag from './Tag.vue';
-import IngredienteSelecionavel from '/home/raquel/Projetos/cookin-up/src/components/IngredienteSelecionavel.vue';
+import IngredienteSelecionavel from './IngredienteSelecionavel.vue';
 
 export default {
     props: {
